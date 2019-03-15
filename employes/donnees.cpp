@@ -52,7 +52,7 @@ bool Donnees::AjouterTache(Tache inTache)
 	{
 		if (lesTaches[cpt] == NULL) 
 		{
-			lesTaches[cpt]=&inTache;
+			lesTaches[cpt]=new Tache (inTache);
 		}
 		cpt++;
 	}
